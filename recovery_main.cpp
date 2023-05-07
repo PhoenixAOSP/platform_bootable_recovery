@@ -70,7 +70,7 @@ static bool IsRoDebuggable() {
 }
 
 static bool IsDeviceUnlocked() {
-  return "orange" == android::base::GetProperty("ro.boot.verifiedbootstate", "");
+  return true;
 }
 
 static void UiLogger(android::base::LogId log_buffer_id, android::base::LogSeverity severity,
